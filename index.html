@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-dom</title>
+</head>
+   
+    <div id="testDiv">
+      <h2>hello everybody</h2>
+    <b>this is a btag</b>
+  <p id="test">this is ptag</p>
+  
+    </div>
+
+<script>
+  let hElement = document.createElement("h1");
+  hElement.innerHTML="hello world";
+// document.body.appendChild(hElement);
+document.body.prepend(hElement);
+
+
+let pElement = document.createElement("p");
+pElement.innerHTML="this another ptag";
+
+let test = document.querySelector("#test");
+let testDiv = document.querySelector("#testDiv");
+testDiv.insertBefore(pElement,test);
+
+
+
+
+</script>
+<body>
+    
+</body>
+</html>
